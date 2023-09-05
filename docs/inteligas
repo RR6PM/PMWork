@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- HTML STUFF -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- BASE URL -->
+    <base href="/PMWork/">
+
+    <!-- THIS SITE INFO -->
+    <title>Ruben Reyna | PM Inteligas</title>
+    <meta
+      name="description"
+      content="Portfolio website of Ruben Reyna. Product Manager. Product/Project: Inteligas Up Si Vale "
+    />
+    <meta name="author" content="Ruben Reyna Product Manager" />
+    <!-- CARDS FOR SOCIAL MEDIA HERE  -->
+    <!-- CARDS FOR SOCIAL MEDIA HERE  -->
+    <!-- CARDS FOR SOCIAL MEDIA HERE  -->
+    <!-- CARDS FOR SOCIAL MEDIA HERE  -->
+    <!-- CARDS FOR SOCIAL MEDIA HERE  -->
+    <!-- CARDS FOR SOCIAL MEDIA HERE  -->
+    <!-- LINKS -->
+    <!-- <link rel="preload" /> -->
+    <link rel="stylesheet" type="text/css" href="./styles-inteligas.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto|Montserrat|Roboto Mono|Roboto Serif"
+    />
+  </head>
+  <body>
+    <header class="l-hdr-cntnr--brand-left">
+      <section
+        class="l-hdr-cntnt--brand-left s-hdr-cntnt s-hdr-cntnt--brand-left"
+      >
+        <span>Ruben Reyna</span>
+      </section>
+
+      <nav>
+        <ul class="nav-list">
+          <li><a href="./index.html">work</a></li>
+          <li><a href="./wip1.html">résumé</a></li>
+          <li><a href="./wip1.html">about</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO INTELIGAS -->
+      <div class="content-container--full-scr-bkgrnd hero">
+        <div class="layout_section flex-two-columns">
+          <div class="container-column--left">
+            <div class="container-text">
+              <p class="uppercase heading-five">Up Si Vale</p>
+              <h1 class="heading-one--super">Inteligas</h1>
+              <h3 class="heading-two">
+                The intelligent App to reduce your fuel expenses
+              </h3>
+              <div class="bullet-align">
+                <ul class="ul-list">
+                  <li class="item-list heading-three">Find the lowest price</li>
+                  <li class="item-list heading-three">
+                    Locate your vehicles and track their performance
+                  </li>
+                  <li class="item-list heading-three">
+                    Secure funds on the card
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="container-column--right adj-img-position--right">
+            <div class="container-img">
+              <img
+                src="./assets/images/Inteligas Gas Stations Tilted 2.png"
+                class="img--l"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTEXT -->
+      <div class="layout_section flex-two-columns background-white">
+        <div class="container-column--left">
+          <div class="container-img">
+            <img src="./assets/images/up-si-vale_inteligas1.png" class="img--m" />
+          </div>
+        </div>
+        <div class="container-column--right">
+          <div class="container-text">
+            <div>
+              <h2 class="heading-two">Context</h2>
+              <p class="paragraph">
+                Company was a voucher issuer with one card to help companies
+                manage their fuel expenses
+              </p>
+
+              <p class="paragraph">
+                App was developed to enrich the value proposition of this
+                product and to adapt the offer to changes in regulation
+              </p>
+
+              <p class="paragraph">
+                It evolved through three years until partnering with Telefonica
+                to connect telemetry
+              </p>
+
+              <p class="paragraph">
+                Two other proofs of concept were made, measuring fuel with
+                sensors at the tank and allowing card-less payment with IOT
+              </p>
+
+              <p class="paragraph">
+                This project spearheaded the digital transformation of the
+                company
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- MY ROLE AS PM -->
+      <div class="layout_section flex-two-columns background-white">
+        <div class="container-column--left">
+          <div class="container-text">
+            <h2 class="heading-two">My Work as a PM</h2>
+            <ul class="ul-list bullet-align">
+              <li class="item-list">
+                Created team of designers and Product Owners that managed the
+                development of this and other applications
+              </li>
+              <li class="item-list">
+                Worked with Visa Innovation Center Miami to define high level
+                roadmap
+              </li>
+              <li class="item-list">
+                Worked with designer to animate Design Sprint®
+              </li>
+              <li class="item-list">
+                White-boarded with designers and engineers to find solutions to
+                key challenges
+              </li>
+              <li class="item-list">Conducted proofs of concept</li>
+              <li class="item-list">
+                Ran go to market of MVP and go to market of joint offer with
+                Telefónica
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="container-column--right">
+          <div class="container-img">
+            <img src="./assets/images/up-si-vale_inteligas2.png" class="img--m" />
+          </div>
+        </div>
+      </div>
+
+      <!-- HIGHLIGHTS/TAKEAWAYS -->
+      <div class="content-container--full-scr-bkgrnd background-grey">
+        <div class="layout_section flex-two-columns">
+          <div class="container-column--left">
+            <div class="container-img">
+              <img
+                src="./assets/images/Inteligas2.png"
+                class="img--m img-app border-img--yes"
+              />
+            </div>
+          </div>
+          <div class="container-column--right">
+            <div class="container-text">
+              <h2 class="heading-two">Key Learnings</h2>
+              <ul class="ul-list bullet-align">
+                <li class="item-list">
+                  Adjusted my understanding of what an MVP should be and
+                  strengthened my capacity to prioritize
+                </li>
+                <li class="item-list">
+                  Got my first real-life, hands-on experience with agile
+                  development working hand to hand with engineers and designers
+                </li>
+                <li class="item-list">
+                  Strengthened my understanding of Design Thinking and
+                  discovered other related frameworks like Design Sprint
+                </li>
+                <li class="item-list">Discovered the basic principles of UX</li>
+                <li class="item-list">
+                  Fostered collaboration to onboard former detractors of agile
+                  methodologies
+                </li>
+                <li class="item-list">
+                  Increased my management skills since the number of direct
+                  reports I had grew, I am thankful for their trust and for the
+                  opportunity I had to help them improve themselves
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>Ruben Reyna</p>
+    </footer>
+  </body>
+</html>
