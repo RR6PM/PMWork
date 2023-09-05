@@ -1,0 +1,167 @@
+@import url("navlist.css");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #fbfbfb;
+  margin: 6.4rem 12%;
+  font-family: "Roboto Serif", serif;
+}
+
+.hero {
+  display: block;
+  max-width: 95rem;
+  margin: 11rem auto;
+  font-size: 3rem;
+  font-family: "Roboto Serif", serif;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  color: #1e1d1d;
+  text-align: center;
+}
+
+.hero p {
+  margin: 2.5rem auto;
+}
+
+.hero p:nth-child(even) {
+  font-weight: bold;
+}
+
+footer {
+  text-align: right;
+  font-family: "Roboto Mono", serif;
+  font-size: 1.2rem;
+  padding-top: 5vh;
+}
+
+.down-arrow {
+  display: flex;
+  justify-content: center;
+}
+
+.select-work {
+  display: grid;
+  gap: 2em;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.select-work > article {
+  height: 16vw;
+  /* padding: 4vw; */
+  border-radius: 0.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+@media screen and (max-width: 900px) {
+  .select-work {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .select-work > article {
+    height: 35vw;
+    /* padding: 9vw; */
+    border-radius: 1vw;
+    /* HERE */
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .select-work {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .select-work > article {
+    height: 70vw;
+    /* padding: 17.5vw; */
+    /* HERE */
+  }
+}
+
+.svg-box {
+  /* background-color: #70f34c; */
+  width: 50%;
+  height: auto;
+}
+
+.svg-box path {
+  fill: white;
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+
+article:hover svg path {
+  opacity: 0.25;
+}
+
+.logo-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: "Roboto Serif", serif;
+  /* pointer-events: none; */
+  opacity: 0;
+  /* background-color: #70f34c; */
+  width: 80%;
+}
+article:hover .logo-text {
+  opacity: 1;
+}
+
+#inteligas {
+  background-color: #f3744c;
+}
+
+#inteliviajes {
+  background-color: #6d5dff;
+}
+#greenup {
+  background-color: #3cad8b;
+}
+#other {
+  background-color: #ffc000;
+}
+
+.inteligasHero {
+  background-color: #f3744c;
+}
+
+.link--type1 {
+  color: white;
+  text-decoration: none;
+  /* text-transform: uppercase; */
+}
+
+.link--type1:visited {
+  color: white;
+}
+/* .nav-list li visited {
+    color: #7e7a7a;
+  } */
+
+.link--type1:hover {
+  color: white;
+  font-weight: bold;
+  transition: font-weight 0.2s ease-in-out, color 0.2s ease-in-out;
+}
