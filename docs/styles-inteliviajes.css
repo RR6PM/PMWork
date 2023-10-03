@@ -1,0 +1,303 @@
+/**
+ * CONTENTS
+ *
+ * SETTINGS
+ * Global...............Globally-available variables and config.
+ *
+ * TOOLS
+ * Mixins...............Useful mixins.
+ *
+ * GENERIC
+ * Normalize.css........A level playing field.
+ * Box-sizing...........Better default `box-sizing`.
+ *
+ * BASE
+ * Headings.............H1–H6 styles.
+ *
+ * OBJECTS
+ * Wrappers.............Wrapping and constraining elements.
+ *
+ * COMPONENTS
+ * Page-head............The main page header.
+ * Page-foot............The main page footer.
+ * Buttons..............Button elements.
+ *
+ * TRUMPS
+ * Text.................Text helpers.
+ */
+
+/* *\
+ IMPORTS
+ \* */
+
+/* *\
+NORMALIZE
+ \* */
+@import url("style-variables.css");
+@import url("navlist.css");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* *\
+ SIZES FONT AND SPACES 
+ \* */
+
+body {
+  background-color: #fbfbfb;
+  font-family: "Montserrat", serif;
+}
+
+/* *\
+HEADINGS
+ \* */
+
+/* *\
+SPACES
+ \* */
+
+/* *\
+GLOBAL SETTINGS
+ \* */
+/* 
+ titles in file
+ section for imports
+ components
+ headings
+ spaces
+ global
+ */
+
+/* LAYOUT CLASSES */
+
+.content-container--full-scr-bkgrnd {
+  overflow: clip;
+  /* margin-right: -10px; */
+}
+
+.layout_section {
+  height: 100vh;
+}
+
+.flex-two-columns {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  /* clips overflowing img */
+  margin: auto var(--space-2xl);
+}
+
+.container-column--left {
+  flex: 1;
+  margin-right: var(--space-m);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.container-column--right {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  margin-left: var(--space-m);
+}
+
+.container-img {
+  display: flex;
+}
+
+.img--l {
+  max-width: 650px;
+  width: 100%;
+  height: auto;
+}
+
+.img-viajes {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.img--xl {
+  max-width: 800px;
+  width: 130%;
+  height: auto;
+}
+
+.img--m {
+  width: 60%;
+  max-width: 650px;
+  height: auto;
+  margin: auto;
+}
+
+.img--s {
+  width: 45%;
+  max-width: 600px;
+  height: auto;
+  margin: auto;
+}
+
+.img--app {
+  max-width: 400px;
+}
+
+.marge {
+  border-radius: 2%;
+  /* border: solid black; */
+  /* box-shadow: 0px 0px 10px 10px rgb(206, 205, 205); */
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
+    0 1px 3px 1px rgba(60, 64, 67, 0.15);
+  /* border-width: 1px; */
+}
+
+.adj-img-position--right {
+  /* margin to the left */
+  margin: 0 calc(-1.1 * var(--space-3xl)) 0 auto;
+  margin-top: 1px;
+  margin-bottom: -1px;
+  /* background-color: green; */
+  align-items: center;
+}
+
+.border-img--yes {
+  border-radius: 10%;
+  /* border: solid black; */
+  border-width: 1px;
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
+    0 1px 3px 1px rgba(60, 64, 67, 0.15);
+}
+
+@media only screen and (max-width: 450px) {
+  .layout_section {
+    height: auto;
+    max-height: 200vh;
+    min-height: 100vh;
+    padding-top: var(--space-m);
+    padding-bottom: var(--space-m);
+  }
+
+  .flex-two-columns {
+    flex-flow: column nowrap;
+    /* gap: var(--space-m); */
+    align-items: stretch;
+  }
+
+  .container-column--left {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+    margin-right: 0;
+  }
+
+  .container-column--right {
+    justify-content: flex-start;
+    flex: 1;
+    margin-left: 0;
+    /* margin-top: var(--space-l); */
+    padding-top: var(--space-s);
+  }
+
+  .img--l {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: auto;
+  }
+
+  .img--m {
+    width: 60%;
+    max-width: 300px;
+    height: auto;
+    margin: auto;
+  }
+
+  .img--s {
+    width: 40%;
+    max-width: 300px;
+    height: auto;
+    margin: auto;
+  }
+
+  .container-img {
+    margin: 0 auto;
+  }
+
+  .img-app {
+    margin-top: var(--space-m);
+  }
+
+  .marge {
+    border-radius: 2%;
+    /* border: solid black; */
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
+      0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    /* border-width: 1px; */
+  }
+
+  .adj-img-position--right {
+    /* margin to the left */
+    /* margin: 0 calc(-1.1 * var(--space-3xl)) 0 auto; */
+
+    margin: 0 0 0 0;
+    margin-top: 1px;
+    margin-bottom: -1px;
+  }
+}
+
+/* GRAPHIC STUFF */
+
+.heroInteliviajes {
+  background-color: #6d5dff;
+  color: #efefef;
+}
+
+.background-grey {
+  background-color: #efefef;
+}
+
+.ul-list {
+  list-style-position: outside;
+}
+
+.bullet-align {
+  padding-left: 2em;
+}
+
+.item-list {
+  /* padding-left: var(--space-xs); */
+  display: list-item;
+  font-size: var(--size-500);
+}
+
+.botton-border {
+  /* border-bottom: solid #0bad84; */
+  box-shadow: 0px 15px 10px -15px #111;
+
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
+    0 1px 3px 1px rgba(60, 64, 67, 0.15);
+}
+
+.svg-box {
+  /* background-color: #70f34c; */
+  width: 50%;
+  height: auto;
+}
+
+.svg-box path {
+  fill: white;
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
