@@ -1,4 +1,5 @@
 @import url("navlist.css");
+@import url("style-variables.css");
 
 *,
 *::before,
@@ -41,9 +42,8 @@ body {
 
 footer {
   text-align: right;
-  font-family: "Roboto Mono", serif;
   font-size: 1.2rem;
-  padding-top: 5vh;
+  padding-top: 15vh;
 }
 
 .down-arrow {
@@ -96,7 +96,6 @@ footer {
 }
 
 .svg-box {
-  /* background-color: #70f34c; */
   width: 50%;
   height: auto;
 }
@@ -116,15 +115,14 @@ article:hover svg path {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: #fbfbfb;
   text-align: center;
   font-size: 1.5em;
   font-family: "Roboto Serif", serif;
-  /* pointer-events: none; */
   opacity: 0;
-  /* background-color: #70f34c; */
   width: 80%;
 }
+
 article:hover .logo-text {
   opacity: 1;
 }
@@ -147,21 +145,16 @@ article:hover .logo-text {
   background-color: #f3744c;
 }
 
-.link--type1 {
-  color: white;
+a.link--type1 {
+  color: #fbfbfb;
   text-decoration: none;
-  /* text-transform: uppercase; */
 }
 
 .link--type1:visited {
-  color: white;
+  color: #fbfbfb;
 }
-/* .nav-list li visited {
-    color: #7e7a7a;
-  } */
 
 .link--type1:hover {
-  color: white;
   font-weight: bold;
-  transition: font-weight 0.2s ease-in-out, color 0.2s ease-in-out;
+  transition: font-weight 0.1s ease-in-out, color 0.2s ease-in-out;
 }

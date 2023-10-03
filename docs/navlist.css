@@ -36,7 +36,7 @@
 .nav-list {
   /* define as flex and determine how content will behave */
   font-family: "Roboto Mono", sans-serif;
-  font-weight: medium;
+  font-weight: normal;
   font-size: 1.2rem;
   margin: 1em 1em;
   display: flex;
@@ -61,24 +61,24 @@
   /* text-transform: uppercase; */
 }
 
-/* .nav-list li visited {
-    color: #7e7a7a;
-  } */
+.nav-list li a:visited {
+  color: #7e7a7a;
+}
 
 .nav-list li a:hover {
   color: #434040;
-  font-weight: bold;
-  transition: font-weight 0.2s ease-in-out, color 0.2s ease-in-out;
+  /* font-weight:lighter; */
+  transition: font-weight 0.1s ease-in-out, color 0.2s ease-in-out;
 }
 
 #nav-list-current {
   text-decoration: underline;
-  text-decoration-thickness: 2px;
-  color: #7e7a7a;
+  text-decoration-thickness: 1.5px;
+  transition: font-weight 0.1s ease-in-out, color 0.2s ease-in-out;
 }
 
 #nav-list-current:hover {
   text-decoration: underline;
-  text-decoration-thickness: 2px;
+  text-decoration-thickness: 3px;
   color: #434040;
 }
