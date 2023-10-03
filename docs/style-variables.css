@@ -45,6 +45,7 @@ h5,
 h6 {
   margin-top: 1em;
   margin-bottom: 0.5em;
+  border-top: 0.5px;
 }
 
 p {
@@ -53,6 +54,18 @@ p {
 
 li {
   margin-bottom: 0.5em;
+}
+
+footer {
+  font-family: "Roboto Mono", sans-serif;
+  display: flex;
+  justify-content: flex-end;
+  color: #a6a6a6;
+  margin: auto var(--space-2xl);
+}
+
+footer.footer-index {
+  margin: 0 0;
 }
 
 .heading-one {
